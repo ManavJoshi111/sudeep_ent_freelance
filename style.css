@@ -1,5 +1,5 @@
 .header {
-    background: linear-gradient(0deg, rgba(217, 217, 217, 0.4), rgba(217, 217, 217, 0.4)), url('./assets/Header_Bg.png');
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0.1), rgba(217, 217, 217, 0.1)), url('./assets/Header_Bg.png');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -7,7 +7,27 @@
 }
 
 .header-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4em;
+    line-height: 77px;
     color: #FFFFFF;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 4rem;
+}
+
+.header-para {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: start;
+    color: #000000;
+
 }
 
 .header-box {
@@ -16,18 +36,30 @@
     border-radius: 10px;
 }
 
+.accordion-button {
+    justify-content: start;
+    flex-direction: row-reverse;
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 10px;
+}
 
 .accordion-button::after {
+    /* margin: 0; */
     background-image: url('./assets/Acc_Plus.png');
+    margin: 0;
+    margin-right: 8px;
 }
 
 .accordion-button:not(.collapsed)::after {
     background-image: url('./assets/Acc_Multi.png');
+    border-radius: 10px;
 }
 
 .accordion-button:not(.collapsed) {
     background-color: #FFFFFF;
     color: black;
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 10px;
 }
 
 .accordion-button:focus {
@@ -35,11 +67,29 @@
     box-shadow: none;
 }
 
-.accordion-header {
-    background-color: gray;
-    ;
+.accordion-body {
+    background: rgba(217, 217, 217, 0.4);
 }
 
-.accordion-body {
-    background-color: gray;
+.appointment {
+    background: #F1F1F1;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.a-text {
+    color: #323232;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.a-number {
+    font-family: 'Lato';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 20px;
+    line-height: 24px;
 }
